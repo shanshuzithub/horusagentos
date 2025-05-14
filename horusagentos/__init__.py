@@ -1,12 +1,14 @@
-# HorusAgentOS Main Package
+# HorusAgentOS Main Package (Flattened Structure)
 
 # Import core components to be available at the package level
-from .core.agent import HorusAgentOS
-from .perception.perception_module import PerceptionModule
-from .decision.decision_module import DecisionModule
-from .action.action_module import ActionModule
-from .memory.memory_module import MemoryModule
-from .communication.communication_module import CommunicationModule
+from .agent import HorusAgentOS
+from .perception_module import PerceptionModule
+from .decision_module import DecisionModule
+from .action_module import ActionModule
+from .memory_module import MemoryModule
+from .communication_module import CommunicationModule
+# Placeholder for a utility module if needed later
+# from .utils_module import some_utility_function # Assuming utils_module.py
 
 __all__ = [
     "HorusAgentOS",
@@ -14,5 +16,8 @@ __all__ = [
     "DecisionModule",
     "ActionModule",
     "MemoryModule",
-    "CommunicationModule"
+    "CommunicationModule",
+    # "some_utility_function"
 ]
+
+print("HorusAgentOS package initialized.")
